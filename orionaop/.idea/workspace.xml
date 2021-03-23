@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17c6e30b-8990-43ae-9831-9cb1c6e1e395" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/aspect/Pointcuts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/exception/FoodExpiredDateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/exception/IncorrectFoodTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/AnimalAsyncService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/AnimalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/CatEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/EventListenerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/Zoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/event/AnimalIsHungryEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/food/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/food/FoodType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/impl/AnimalAsyncServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/impl/AnimalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/impl/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/impl/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/jobs/EatJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring3/zoo/jobs/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/XmlApplicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pmXj7UXpn24NTiUVji9x7cz8kp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Java/Spring_in_action_5/taco-cloud" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m-mur\Desktop\DPopkov\learnjvm\orionaop\src\main\resources" />
+      <recent name="C:\Users\m-mur\Desktop\DPopkov\learnjvm\orionaop\src\main\java\com\deadpool" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring3.Main" />
+      <module name="orionaop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17c6e30b-8990-43ae-9831-9cb1c6e1e395" name="Default Changelist" comment="" />
+      <created>1615789374198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615789374198</updated>
+      <workItem from="1615789375433" duration="3179000" />
+      <workItem from="1615911599950" duration="676000" />
+      <workItem from="1615970002174" duration="677000" />
+      <workItem from="1615972501433" duration="1000" />
+      <workItem from="1616337993546" duration="535000" />
+      <workItem from="1616404563598" duration="12340000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
