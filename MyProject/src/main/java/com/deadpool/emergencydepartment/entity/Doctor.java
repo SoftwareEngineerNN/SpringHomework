@@ -1,6 +1,19 @@
 package com.deadpool.emergencydepartment.entity;
 
-public interface Doctor {
+import com.deadpool.emergencydepartment.enums.Sex;
+import com.deadpool.emergencydepartment.enums.Speciality;
 
-    void examinePatient(Patient patient);
+public class Doctor {
+    private int id;
+    private String lastName;
+    private String firstName;
+    private int age;
+    private Sex sex;
+    private int experienceYears;
+    private Speciality speciality;
+
+
+
+
+
 }

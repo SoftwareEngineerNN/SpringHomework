@@ -1,4 +1,4 @@
-package com.deadpool.emergencydepartment.entity;
+package com.deadpool.emergencydepartment.enums;
 
 public enum Analyses {
     GENERAL_BLOOD_TEST,

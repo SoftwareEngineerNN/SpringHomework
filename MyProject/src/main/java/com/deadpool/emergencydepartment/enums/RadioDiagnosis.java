@@ -1,4 +1,4 @@
-package com.deadpool.emergencydepartment.entity;
+package com.deadpool.emergencydepartment.enums;
 
 public enum RadioDiagnosis {
     ULTRA_SOUND,
