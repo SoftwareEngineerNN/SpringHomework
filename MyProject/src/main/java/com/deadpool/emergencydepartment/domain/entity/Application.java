@@ -1,4 +1,4 @@
-package com.deadpool.emergencydepartment.entity;
+package com.deadpool.emergencydepartment.domain.entity;
 
 import com.deadpool.emergencydepartment.enums.Symptom;
 import lombok.AllArgsConstructor;

@@ -1,15 +1,12 @@
-package com.deadpool.emergencydepartment.entity;
+package com.deadpool.emergencydepartment.domain.entity;
 
 
 import com.deadpool.emergencydepartment.enums.Analyses;
 import com.deadpool.emergencydepartment.enums.RadioDiagnosis;
 import com.deadpool.emergencydepartment.enums.Treatment;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.FetchType;
-import javax.persistence.ManyToMany;
 import java.util.List;
 
 @Data
