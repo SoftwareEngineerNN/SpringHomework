@@ -1,4 +1,6 @@
-package com.deadpool.emergencydepartment.enums;
+package com.deadpool.emergencydepartment.domain.enums;
+
+import javax.persistence.Enumerated;
 
 public enum Symptom {
     HEADACHE,
@@ -10,6 +12,7 @@ public enum Symptom {
     WEAKNESS,
     DIARRHEA,
     BLACK_STOOL,
-    FEVER
+    FEVER,
+    OTHER
 
 }

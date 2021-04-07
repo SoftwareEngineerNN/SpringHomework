@@ -1,17 +1,28 @@
 package com.deadpool.emergencydepartment.domain.entity;
 
-import com.deadpool.emergencydepartment.enums.Sex;
-import com.deadpool.emergencydepartment.enums.Speciality;
+import com.deadpool.emergencydepartment.domain.enums.Role;
+import com.deadpool.emergencydepartment.domain.enums.Sex;
+import com.deadpool.emergencydepartment.domain.enums.Speciality;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.UUID;
+
 
 @Entity
 @Table(name = "doctors")
-public class Doctor {
+@NoArgsConstructor
+@Getter
+@Setter
+public class Doctor extends Base {
 
     @Id
-    private UUID id = UUID.randomUUID();
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Enumerated(EnumType.STRING)
+    private Role role;
     private String lastName;
     private String firstName;
     private int age;
@@ -21,8 +32,14 @@ public class Doctor {
     @Enumerated(EnumType.STRING)
     private Speciality speciality;
 
-
-
+    public Doctor(String lastName, String firstName, int age, Sex sex, int experienceYears, Speciality speciality) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.age = age;
+        this.sex = sex;
+        this.experienceYears = experienceYears;
+        this.speciality = speciality;
+    }
 
 
 }

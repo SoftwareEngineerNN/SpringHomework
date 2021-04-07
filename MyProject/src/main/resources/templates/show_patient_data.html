@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Data</title>
+</head>
+<body>
+<h1>Dear patient, please check out your data</h1>
+<br>
+<div th:text="'Your Last Name: ' + ${patient.getLastName()}"></div>
+<br>
+<div th:text="'Your First Name: ' + ${patient.getFirstName()}"></div>
+<br>
+<div th:text="'Your Age: ' + ${patient.getAge()}"></div>
+<br>
+<div th:text="'Your Sex: ' + ${patient.getSex()}"></div>
+<br>
+<div th:text="'Your Medical insurance number: ' + ${patient.getMedicalInsuranceNumber()}"></div>
+<br>
+<div th:text="'Your Email: ' + ${patient.getEmail()}"></div>
+<br>
+<a th:href="home">Click here to get home page</a>
+</body>
+</html>

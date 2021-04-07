@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Registry Form</title>
+</head>
+<body>
+<h1>Dear patient, welcome to registry page.
+<br>
+    Please fill the gaps.
+</h1>
+
+<form th:method="GET" th:action="@{/registry-new}" th:object="${patient}">
+
+    <label for="lastName"> Last Name:</label>
+    <input type="text" th:field="*{lastName}" id="lastName"
+        placeholder="Write your last name">
+    <div style="color:red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"> Last name Error</div>
+    <br>
+    <label for="firstName"> First Name: </label>
+    <input type="text" th:field="*{firstName}" id="firstName"
+        placeholder="Write your first name">
+    <div style="color: red" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First Name Error</div>
+    <br>
+
+    <label for="age">Age: </label>
+    <input type="text" th:field="*{age}" id="age">
+    <div style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</div>
+    <br>
+    <br>
+
+
+<!--    Nice one-->
+      <label for="sex">Choose your sex:</label>
+        <br>
+        <input type="radio" th:field="*{sex}" id="sex"
+                th:each="entry: *{sexList.entrySet()}"
+               th:value="${entry.getValue()}"
+               th:utext="${entry.getKey()}">
+        <div style="color: red" th:if="${#fields.hasErrors('sex')}" th:errors="*{sex}">Sex Error</div>
+
+<!--    Trying like in Raven Project-->
+<!--     Choose your sex:-->
+<!--    <br>-->
+
+<!--    <div th:field="*{sex}"  th:each="el: *{sexList}">-->
+<!--         <input type="radio" th:value="${el}" id="" >-->
+<!--        <label for="${}" th:utext="${el.toString()}"></label> <br/>-->
+<!--    </div>-->
+<!--    <br>-->
+
+<!--    <label for="department">Choose department </label>-->
+<!--    <select th:field="*{department}" id="department">-->
+<!--        <option value="">&#45;&#45;</option>-->
+<!--        <option th:each="entry : *{departmentList}"-->
+<!--                th:value="${entry.getValue()}"-->
+<!--                th:utext="${entry.getKey()}">-->
+
+<!--        </option>-->
+<!--    </select>-->
+
+
+
+     <br>
+     <br>
+
+    <label for="insureNum">Insurance number:</label>
+    <input type="text" id="insureNum" th:field="*{medicalInsuranceNumber}"
+    placeholder="Write 16 numbers">
+    <div style="color: red" th:if="${#fields.hasErrors('medicalInsuranceNumber')}" th:errors="*{medicalInsuranceNumber}">Insurance Error</div>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" th:field="*{email}">
+    <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
+    <br>
+    <br>
+
+
+
+
+
+    <input type="submit" value="Create Me">
+
+
+</form>
+
+<form th:method="GET" th:action="@{/home}" >
+    <input type="submit" value="Cancel">
+</form>
+</body>
+</html>
