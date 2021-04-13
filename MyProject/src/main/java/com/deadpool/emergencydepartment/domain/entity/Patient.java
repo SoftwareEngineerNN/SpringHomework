@@ -30,5 +30,5 @@ public class Patient extends Base{
     private Sex sex;
     private String medicalInsuranceNumber;
     private String email;
-    private boolean isExamined;
+
 }

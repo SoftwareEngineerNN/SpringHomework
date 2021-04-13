@@ -10,7 +10,7 @@
     Please fill the gaps.
 </h1>
 
-<form th:method="GET" th:action="@{/registry-new}" th:object="${patient}">
+<form th:method="POST" th:action="@{/registry/patients}" th:object="${patient}">
 
     <label for="lastName"> Last Name:</label>
     <input type="text" th:field="*{lastName}" id="lastName"

@@ -8,6 +8,7 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
 
+import javax.persistence.Transient;
 import javax.validation.constraints.Min;
 
 import javax.validation.constraints.NotNull;
@@ -36,14 +37,15 @@ public class PatientDTO {
     @Size(min = 16, max = 16, message = "Please enter 16 numbers")
     private String medicalInsuranceNumber;
 //    @NotBlank
-    @Email()
+    @Email
     private String email;
-    private Map<String, Sex> sexList;
-    {
-        sexList = new HashMap<>();
-        sexList.put("Male", Sex.MALE);
-        sexList.put("Female", Sex.FEMALE);
 
-    }
+//    private Map<String, Sex> sexList;
+//    {
+//        sexList = new HashMap<>();
+//        sexList.put("Male", Sex.MALE);
+//        sexList.put("Female", Sex.FEMALE);
+//
+//    }
 
 }

@@ -17,7 +17,8 @@ public class Application extends Base {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;@ManyToOne
+    private long id;
+    @ManyToOne
     private Patient patient;
 
     @ManyToOne
@@ -27,6 +28,7 @@ public class Application extends Base {
     @ElementCollection(targetClass = Symptom.class)
     @CollectionTable(name = "application_symptom")
     private List<Symptom> symptoms;
+    private boolean isHandled;
 
 
     public Application(Patient patient, Doctor doctor) {
