@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.Date;
 import java.util.List;
-import java.util.UUID;
+
 
 @Entity
 @Table(name = "examinations")
@@ -20,9 +19,6 @@ import java.util.UUID;
 @Setter
 public class Examination extends Base{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
 
     @ManyToOne
     private Patient patient;
@@ -52,8 +48,8 @@ public class Examination extends Base{
     @Override
     public String toString() {
         return "Examination{" +
-                "id=" + id +
-                ", patient=" + patient +
+
+                "patient=" + patient +
                 ", doctor=" + doctor +
                 ", preliminaryDiagnosis='" + preliminaryDiagnosis + '\'' +
                 '}';

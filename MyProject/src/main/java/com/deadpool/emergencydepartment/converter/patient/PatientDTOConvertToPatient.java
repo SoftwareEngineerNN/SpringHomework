@@ -13,6 +13,7 @@ public class PatientDTOConvertToPatient implements Converter<PatientDTO, Patient
         Patient patient = new Patient();
         patient.setFirstName(patientDTO.getFirstName());
         patient.setLastName(patientDTO.getLastName());
+        //patient.setBirthDay(patientDTO.getBirthDay());
         patient.setAge(patientDTO.getAge());
         patient.setSex(patientDTO.getSex());
         patient.setMedicalInsuranceNumber(patientDTO.getMedicalInsuranceNumber());

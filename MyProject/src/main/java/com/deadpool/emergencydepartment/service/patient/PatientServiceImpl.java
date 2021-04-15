@@ -3,11 +3,14 @@ package com.deadpool.emergencydepartment.service.patient;
 import com.deadpool.emergencydepartment.domain.DTO.PatientDTO;
 import com.deadpool.emergencydepartment.domain.entity.Patient;
 import com.deadpool.emergencydepartment.repository.patient.PatientRepository;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.core.convert.ConversionService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,6 +21,7 @@ public class PatientServiceImpl implements PatientService{
 
     private final PatientRepository patientRepository;
     private final ConversionService conversionService;
+
 
     @Override
     public List<PatientDTO> getAllPatients() {
@@ -36,6 +40,7 @@ public class PatientServiceImpl implements PatientService{
     @Override
     public PatientDTO createNewPatient(PatientDTO patientDTO) {
         Patient patient = conversionService.convert(patientDTO, Patient.class);
+//        patient.setDate(new Date());
         Patient result = patientRepository.save(patient);
         return conversionService.convert(result, PatientDTO.class);
     }

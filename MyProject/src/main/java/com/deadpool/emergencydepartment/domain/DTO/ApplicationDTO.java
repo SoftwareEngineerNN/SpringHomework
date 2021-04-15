@@ -13,6 +13,7 @@ import java.util.List;
 public class ApplicationDTO {
 
     private PatientDTO patientDTO;
+    private DoctorDTO doctorDTO;
     private List<Symptom> symptomList;
 
 

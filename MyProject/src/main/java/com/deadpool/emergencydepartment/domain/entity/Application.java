@@ -15,9 +15,7 @@ import java.util.List;
 @Table(name = "applications")
 public class Application extends Base {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+
     @ManyToOne
     private Patient patient;
 
@@ -31,9 +29,11 @@ public class Application extends Base {
     private boolean isHandled;
 
 
-    public Application(Patient patient, Doctor doctor) {
+    public Application(Patient patient, Doctor doctor, List<Symptom> symptoms, boolean isHandled) {
         this.patient = patient;
         this.doctor = doctor;
+        this.symptoms = symptoms;
+        this.isHandled = isHandled;
     }
 
     @Override

@@ -18,9 +18,6 @@ import javax.persistence.*;
 @Setter
 public class Doctor extends Base {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
     @Enumerated(EnumType.STRING)
     private Role role;
     private String lastName;

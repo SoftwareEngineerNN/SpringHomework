@@ -30,15 +30,15 @@ public class RegistryController {
 
     @PostMapping("/patients")
     public PatientDTO addNewPatient(@RequestBody PatientDTO patientDTO) {
-        patientService.createNewPatient(patientDTO);
-        return patientDTO;
+
+        return patientService.createNewPatient(patientDTO);
     }
 
     @PutMapping("/patients/{id}")
     public PatientDTO updatePatient(@RequestBody PatientDTO patientDTO,
                                     @PathVariable("id") long id ) {
-        patientService.updatePatient(patientDTO, id);
-        return patientDTO;
+
+        return patientService.updatePatient(patientDTO, id);
     }
 
 

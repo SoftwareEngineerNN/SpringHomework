@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 
 
 @EqualsAndHashCode(callSuper = true)
@@ -16,15 +17,11 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Patient extends Base{
 
-
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
     @Enumerated(EnumType.STRING)
     private Role role;
     private String lastName;
     private String firstName;
+    //private Date birthDay;
     private int age;
     @Enumerated(EnumType.STRING)
     private Sex sex;
