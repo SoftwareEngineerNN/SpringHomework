@@ -1,13 +1,10 @@
 package com.deadpool.emergencydepartment.service.patient;
 
 import com.deadpool.emergencydepartment.domain.DTO.PatientDTO;
-
-
-
 import java.util.List;
 
 
-public interface PatientService {
+public interface PatientService{
 
     List<PatientDTO> getAllPatients();
 
@@ -18,5 +15,7 @@ public interface PatientService {
     PatientDTO updatePatient(PatientDTO patientDTO, long id);
 
     void deletePatientById(long id);
+
+
 
 }

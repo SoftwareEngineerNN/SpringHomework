@@ -22,6 +22,6 @@ public class Base {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected long id;
+    private long id;
 
 }

@@ -1,6 +1,6 @@
 package com.deadpool.emergencydepartment.domain.entity;
 
-import com.deadpool.emergencydepartment.domain.enums.Role;
+import com.deadpool.emergencydepartment.domain.enums.Roles;
 import com.deadpool.emergencydepartment.domain.enums.Sex;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -18,11 +18,10 @@ import java.util.Date;
 public class Patient extends Base{
 
     @Enumerated(EnumType.STRING)
-    private Role role;
+    private Roles roles;
     private String lastName;
     private String firstName;
-    //private Date birthDay;
-    private int age;
+    private Date birthDay;
     @Enumerated(EnumType.STRING)
     private Sex sex;
     private String medicalInsuranceNumber;

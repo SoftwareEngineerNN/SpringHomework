@@ -28,6 +28,10 @@ public class Application extends Base {
     private List<Symptom> symptoms;
     private boolean isHandled;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "examination_id")
+    private Examination examinationOfApp;
+
 
     public Application(Patient patient, Doctor doctor, List<Symptom> symptoms, boolean isHandled) {
         this.patient = patient;

@@ -1,6 +1,6 @@
 package com.deadpool.emergencydepartment.domain.entity;
 
-import com.deadpool.emergencydepartment.domain.enums.Role;
+import com.deadpool.emergencydepartment.domain.enums.Roles;
 import com.deadpool.emergencydepartment.domain.enums.Sex;
 import com.deadpool.emergencydepartment.domain.enums.Speciality;
 
@@ -19,7 +19,7 @@ import javax.persistence.*;
 public class Doctor extends Base {
 
     @Enumerated(EnumType.STRING)
-    private Role role;
+    private Roles roles;
     private String lastName;
     private String firstName;
     private int age;

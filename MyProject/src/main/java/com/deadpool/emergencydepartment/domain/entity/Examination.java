@@ -4,6 +4,7 @@ package com.deadpool.emergencydepartment.domain.entity;
 import com.deadpool.emergencydepartment.domain.enums.Analyses;
 import com.deadpool.emergencydepartment.domain.enums.RadioDiagnosis;
 import com.deadpool.emergencydepartment.domain.enums.Treatment;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,15 +16,14 @@ import java.util.List;
 @Entity
 @Table(name = "examinations")
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class Examination extends Base{
 
+    @OneToOne(mappedBy = "examinationOfApp", cascade = CascadeType.ALL)
+    private Application application;
 
-    @ManyToOne
-    private Patient patient;
-    @ManyToOne
-    private Doctor doctor;
     private String preliminaryDiagnosis;
 
     @Enumerated(EnumType.STRING)
@@ -39,18 +39,11 @@ public class Examination extends Base{
     @CollectionTable(name = "examination_radiodiagnosis")
     private List<RadioDiagnosis> radioDiagnosis;
 
-    public Examination(Patient patient, Doctor doctor, String preliminaryDiagnosis) {
-        this.patient = patient;
-        this.doctor = doctor;
-        this.preliminaryDiagnosis = preliminaryDiagnosis;
-    }
 
     @Override
     public String toString() {
         return "Examination{" +
-
-                "patient=" + patient +
-                ", doctor=" + doctor +
+                "application=" + application +
                 ", preliminaryDiagnosis='" + preliminaryDiagnosis + '\'' +
                 '}';
     }
